@@ -9,6 +9,8 @@
 | /api/restaurant?page=3&size=20 | GET    | get list of restaurants for pagination.<br>page=3 show page3 of pagination, <br>size=20 mean limit the list to 20 restaurants<br> can omit page or size as page default to 1 and size default to 15 | NA                |
 | /api/restaurant?find=soup      | GET    | get list of restaurant with name or tags contain soup. <br>Can use with page and size query param                                                                                                   | NA                |
 | /api/restaurant/:id            | GET    | get particular restaurant by id                                                                                                                                                                     | id of restaurant  |
+| /api/restaurant/slots/:id      | GET    | get available timeslots for a particular restaurant                                                                                                                                                                     | id of restaurant, date (optional) and pax(optional)  |  
+| /api/restaurant/makeReservation | POST    | add reservation to a particular table                                                                                                                                                                    | date, time, pax, restaurant id  |  
 
 ##### Restaurant routes
 
